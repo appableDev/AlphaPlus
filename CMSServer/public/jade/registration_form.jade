@@ -1,0 +1,32 @@
+extends layouts/layout_regis
+
+block vars
+  -title = 'Registration Form'
+  -bodyClass = 'home1'
+  -menuIndex = 0
+
+block container
+  main
+    .regis_form
+      .sum_form
+        .main_title
+          h3 Registration Form
+        .desc_regis
+          form(method="post", action="/api/v1/registration")
+            .first_name
+              span First Name
+              input(type='text',name='firstname',placeholder="Enter Your First Name")
+            .last_name
+              span Last Name
+              input(type='text',name='lastname',placeholder="Enter Your Last Name")
+            .email
+              span Email
+              input(type='text',name='email',placeholder="Enter Your Email")
+            .pass
+              span Password
+              input(type='password',name='password',placeholder="Password")
+            .cf_pass
+              span Confirm Password
+              input(type='password',name='cf_password',placeholder="Password")
+            .btn_1
+              button(type="submit",id="submit") Register

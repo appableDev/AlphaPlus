@@ -1,0 +1,26 @@
+extends layouts/layout_login_st
+
+block vars
+  -title = 'Student Login '
+  -bodyClass = 'home1'
+  -menuIndex = 0
+
+block container
+  main
+    .login_form 
+      .sum_form 
+        .main_title
+          h3 Student Login
+        .desc_login 
+          //- p Enter the Email and Password to login the next page
+          form(method="post", action="index.html")
+            .student_id
+              span Student ID
+              input(type='text',name='agreement',placeholder="Enter Your ID")
+            .pass_login   
+              span Password
+              input(type='password',name='password',placeholder="Password")
+            .btn_1 
+              button(type="submit",id="submit") Login    
+
+    

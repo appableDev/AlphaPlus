@@ -1,0 +1,55 @@
+extends layouts/layout
+
+block vars
+  -title = 'Homepage'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  main
+    .header_zone
+      .br_tab
+        ul
+          li
+            a(href="#") Jenks HS
+          li
+            a(href="#") Algebra 2 0879
+          li
+            a(href="#") Course Tests
+          li
+            a(href="#") Deployed Tests
+      .btn_start.even
+        button( type="submit", id="start").active Start Test Session    
+    .summative
+      h3 Summative Tests
+      .table_form
+        table
+          tr.even       
+            td.text_name OK - Algebra 2 - A1
+            td.checkbox 
+              input( type="checkbox", id="check")
+          tr      
+            td.text_name OK - Algebra 2 - B
+            td.checkbox 
+              input( type="checkbox", id="check1")
+          tr.even       
+            td.text_name OK - Algebra 2 - A2
+            td.checkbox 
+              input( type="checkbox", id="check2")
+    .formative 
+      h3 Formative Tests            
+      .table_form
+        table
+          tr.even       
+            td.text_name OK - Algebra 2 - A1
+            td.checkbox 
+              input( type="checkbox", id="check3")
+          tr      
+            td.text_name OK - Algebra 2 - B
+            td.checkbox 
+              input( type="checkbox", id="check4")
+          tr.even       
+            td.text_name OK - Algebra 2 - A2
+            td.checkbox 
+              input( type="checkbox", id="check5")          
+                  

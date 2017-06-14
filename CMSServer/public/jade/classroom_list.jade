@@ -1,0 +1,23 @@
+extends layouts/layout_classroom
+
+block vars
+  -title = 'Classroom List'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  include blocks/br_tab
+  main
+    .dashboard
+      each obj in classrooms
+        h3= obj.classroom_id
+        each test in obj.test_session
+          .item_subject
+            p= test
+            .btn_group_sub
+              a(href="#")
+                button(type="submit", name="", id="student" disabled) S
+              a(href="#")
+                button(type="submit", name="", id="testing") T
+              a(href="#")
+                button(type="submit", name="", id="report" disabled) R

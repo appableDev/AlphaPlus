@@ -1,0 +1,110 @@
+extends layouts/layout_view_all
+
+block vars
+  -title = 'View All'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  main
+    .view_all
+      h2 You have completed:
+        .bold_l 1&nbsp;
+        |out of
+        .bold_l 18&nbsp;
+        |question(s)
+      .view_content
+        .item_view.block1.active
+          span.number 1
+          p.not_ans not answerd
+          p.active not visited
+          p.ans answered
+        .item_view.block2.ans
+          span.number 2
+          p.not_ans not answerd
+          p.active not visited
+          p.ans answered
+        .item_view.block3.not_ans
+          span.number 3
+          p.not_ans not answerd
+          p.active not visited
+          p.ans answered
+        .item_view.block4.not_ans.ans.active
+          span.number 4
+          p.not_ans not answerd
+          p.active not visited
+          p.ans answered
+        .item_view.block5.not_ans.ans.active
+          span.number 5
+          p.not_ans not answerd
+          p.active not visited
+          p.ans answered
+        .item_view.block6.not_ans.ans.active
+          span.number 6
+          p.not_ans not answerd
+          p.active not visited
+          p.ans answered
+        .item_view.block7.not_ans.ans.active
+          span.number 7
+          p.not_ans not answerd
+          p.active not visited
+          p.ans answered
+        .item_view.block8.not_ans.ans.active
+          span.number 8
+          p.not_ans not answerd
+          p.active not visited
+          p.ans answered
+        .item_view.block9.not_ans.ans.active
+          span.number 9
+          p.not_ans not answerd
+          p.active not visited
+          p.ans answered
+        .item_view.block10.not_ans.ans.active
+          span.number 10
+          p.not_ans not answerd
+          p.active not visited
+          p.ans answered
+        .item_view.block11.not_ans.ans.active
+          span.number 11
+          p.not_ans not answerd
+          p.active not visited
+          p.ans answered
+        .item_view.block12.not_ans.ans.active
+          span.number 12
+          p.not_ans not answerd
+          p.active not visited
+          p.ans answered
+        .item_view.block13.not_ans.ans.active
+          span.number 13
+          p.not_ans not answerd
+          p.active not visited
+          p.ans answered
+        .item_view.block14.not_ans.ans.active
+          span.number 14
+          p.not_ans not answerd
+          p.not_visit not visited
+          p.ans answered
+        .item_view.block15.not_ans.ans.active
+          span.number 15
+          p.not_ans not answerd
+          p.active not visited
+          p.ans answered
+        .item_view.block16.not_ans.ans.active
+          span.number 16
+          p.not_ans not answerd
+          p.active not visited
+          p.ans answered
+        .item_view.block17.not_ans.ans.active
+          span.number 17
+          p.not_ans not answerd
+          p.active not visited
+          p.ans answered
+        .item_view.block18.not_ans.ans.active
+          span.number 18
+          p.not_ans not answerd
+          p.active not visited
+          p.ans answered                                           
+      .btn_view
+        a(href="#").pause_tst Pause Test
+        a(href="#").return Return to test
+        a(href="#").turn_in Turn In    

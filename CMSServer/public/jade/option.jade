@@ -1,0 +1,22 @@
+extends layouts/layout_option
+block vars
+  -title = 'Options'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  main
+    .option
+      h3 Options
+      .option_content
+        .basic_calculator
+          .item
+            input(type="checkbox", name="" checked)
+            label Basic Calculator
+        .general_masking
+          .item
+            input(type="checkbox", name="" checked)
+            label General Masking
+        .btn_1
+          button(type="submit", id="continue") Continue        
+

@@ -1,0 +1,39 @@
+//LOGIN
+export const LOGIN_ERROR_MESSAGE = 'LOGIN_ERROR_MESSAGE'
+export const LOGIN_BUTTON_STATUS = 'LOGIN_BUTTON_STATUS'
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS'
+
+//CMS
+/* ---- SELECTION ---- */
+export const LOAD_ALL_GRADES = 'LOAD_ALL_GRADES'
+export const SAVE_NEW_DATA = 'SAVE_NEW_DATA'
+export const SAVE_GROUP_NEW_DATA = 'SAVE_GROUP_NEW_DATA'
+export const SAVE_CORRECT_ANSWER = 'SAVE_CORRECT_ANSWER'
+export const SAVE_GROUP_CORRECT_ANSWER = 'SAVE_GROUP_CORRECT_ANSWER'
+
+/* ---- VIEW EDIT ---- */
+export const CMS_VIEWEDIT_LOADED = 'CMS_VIEWEDIT_LOADED'
+export const CMS_VIEWEDIT_INIT = 'CMS_VIEWEDIT_INIT'
+export const CMS_VIEWEDIT_NEXT_PAGE = 'CMS_VIEWEDIT_NEXT_PAGE'
+export const CMS_VIEWEDIT_PREV_PAGE = 'CMS_VIEWEDIT_PREV_PAGE'
+export const CMS_VIEWEDIT_ON_PAGE = 'CMS_VIEWEDIT_ON_PAGE'
+export const CMS_EDIT_TEST_POPUP = 'CMS_EDIT_TEST_POPUP'
+export const CMS_CHANGE_TEXT_POPUP = 'CMS_CHANGE_TEXT_POPUP'
+export const CMS_SAVE_TEXT_POPUP = 'CMS_SAVE_TEXT_POPUP'
+export const CMS_SAVE_ANSWER_KEY = 'CMS_SAVE_ANSWER_KEY'
+export const CMS_SELECT_OBJECTIVE_EDIT = 'CMS_SELECT_OBJECTIVE_EDIT'
+
+
+// Constant for Action -> Server
+export const LOGIN_ACTION = 'LOGIN_ACTION'
+
+//Utilities
+export const DISABLE_BUTTON_STATUS_CHANGED = 'DISABLE_BUTTON_STATUS_CHANGED'
+export const RESET_ALL_STATE = 'RESET_ALL_STATE'
+export const LOADING_IMAGE_A = 'images/loading_progress_small.gif'
+export const LOADING_IMAGE_B = 'images/loading_progress.gif'
+export const LOADING_IMAGE_C = 'images/loading_management.gif'
+
+export const LOAD_A_TEST = 'LOAD_A_TEST'
+
+

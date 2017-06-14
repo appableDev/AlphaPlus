@@ -1,0 +1,152 @@
+ <!--include blocks/menu_main-->
+ <div class="select"><span>Teacher:
+    <select>
+      <option value="teacher1">Jones, Jerry</option>
+      <option value="teacher2">Tom, Jerry</option>
+      <option value="teacher3">Jones, Jerry</option>
+    </select></span><span class="classroom">Class:
+    <select>
+      <option value="class1">1st Period</option>
+      <option value="class2">2st Period</option>
+      <option value="class3">3st Period</option>
+    </select></span></div>
+<div class="management">
+  <div class="header_title">
+    <div class="info_left">
+      <div class="edit_name">
+        <h2>1st Period</h2>
+        <input type="search" name="edit" class="hidden"/>
+      </div>
+      <p>Name/Description</p>
+    </div>
+    <div class="info_right">
+      <p>Course:<span>Math</span></p>
+      <p>Term:<span>2015-2016</span></p>
+    </div>
+  </div>
+  <div class="table_student">
+    <h2>STUDENT <span>List</span></h2>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:25%" class="st_id">Student ID</th>
+          <th style="width:40%" class="name">Name</th>
+          <th style="width:10%">Calculator</th>
+          <th style="width:15%">Suspend Record</th>
+          <th style="width:10%">Merge</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="st_id">99-5739471</td>
+          <td class="name">Smith, Joe</td>
+          <td> <a class="cal">ON</a><a class="off hidden">OFF</a></td>
+          <td> <a class="sr">Suspend</a></td>
+          <td><a class="merge">Merge</a></td>
+        </tr>
+        <tr>
+          <td class="st_id">100-5739473</td>
+          <td class="name">Doe, Aiden</td>
+          <td> <a class="cal">ON</a><a class="off hidden">OFF</a></td>
+          <td> <a class="sr">Suspend</a></td>
+          <td><a class="merge">Merge</a></td>
+        </tr>
+        <tr>
+          <td class="st_id">100-3829838</td>
+          <td class="name">Bryant, Kobe</td>
+          <td> <a class="cal">ON</a><a class="off hidden">OFF</a></td>
+          <td> <a class="sr">Suspend</a></td>
+          <td><a class="merge">Merge </a></td>
+        </tr>
+        <tr>
+          <td class="st_id">100-4824728</td>
+          <td class="name">Johndon, Warren</td>
+          <td> <a class="cal hidden">ON</a><a class="off">OFF</a></td>
+          <td> <a class="sr">Suspend</a></td>
+          <td><a class="merge">Merge</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="feature_box">
+      <div class="add_upload">
+        <ul>
+          <li><a class="add">Add Student</a></li>
+          <li> <a class="upload upload">Upload Students(.csv) </a></li>
+        </ul>
+      </div>
+      <div class="add_box">
+        <form>
+          <input type="search" name="add student" placeholder="First Name, Last Name, or Part of Student ID"/>
+          <button type="button">Add</button>
+          <p class="error active">Your search did not match any current students</p>
+        </form>
+        <div class="link">
+          <ul>
+            <li><a>Create New Student</a></li>
+            <li> <a>Upload Students(.csv)  </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="create_new_box">
+        <h3>Create New Student</h3>
+        <form>
+          <input type="text" name="fname" placeholder=" First Name"/><br/>
+          <input type="text" name="lname" placeholder=" Last Name"/><br/>
+          <input type="text" name="studentid" placeholder=" Student ID (if blank, temporary ID will be generated)"/>
+          <button type="button" class="disabled">Create</button>
+          <p class="active">Student ID already taken  </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="table_proctor">
+    <h2>PROCTOR <span>List</span></h2>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:25%" class="name">Name</th>
+          <th style="width:65%" class="email">Email</th>
+          <th style="width:10%">Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name">Smith, Joe</td>
+          <td class="email">js@gmail.com</td>
+          <td><a class="remove">  </a></td>
+        </tr>
+        <tr>
+          <td class="name">Doe, Aiden</td>
+          <td class="email">goerge@aol.com</td>
+          <td><a class="remove"> </a></td>
+        </tr>
+        <tr>
+          <td class="name">Bryant, Kobe</td>
+          <td class="email">curry@goappable.com</td>
+          <td><a class="remove">  </a></td>
+        </tr>
+        <tr>
+          <td class="name">Johndon, Warren</td>
+          <td class="email">paul@yahoo.com</td>
+          <td><a class="remove"> </a></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="feature_box">
+      <div class="add_upload">
+        <ul>
+          <li><a class="add">Add Student</a></li>
+          <li> <a class="upload upload">Upload Students(.csv)  </a></li>
+        </ul>
+      </div>
+      <div class="add_box">
+        <form>
+          <input type="search" name="add student" placeholder="Email Address"/>
+          <button type="button">Add</button>
+          <p class="error">Your email was wrong</p>
+        </form>
+        <div class="link"><a>Upload proctors(.csv)</a></div>
+      </div>
+    </div>
+  </div>
+</div>

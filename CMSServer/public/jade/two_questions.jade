@@ -1,0 +1,89 @@
+extends layouts/layout_two_questions
+
+block vars
+  -title = 'Two Questions Test'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  main
+    .test_content
+      .test_left.no_tab
+        .request
+          span.bold_s Read this selection and the questions that follow it.
+            br   
+            |Choose the best answer for each question.
+        .title_para
+          span.bold_m Sample Selection
+          span.bold_l A Birthday Challenge
+          span.light_i by Neil Genzlinger
+        .content_para
+          span.para_num 1
+          span.text_para My two friends and I don’t expect a Nobel Prize. We don’t expect to have a bridge or a building named after us. None of the great scientists think in those terms while pursuing their breakthroughs; they think only of the good their research might do for humanity.
+        .content_para
+          span.para_num 2
+          span.text_para My two friends and I don’t expect a Nobel Prize. We don’t expect to have a bridge or a building named after us. None of the great scientists think in those terms while pursuing their breakthroughs; they think only of the good their research might do for humanity.
+        .content_para
+          span.para_num 3
+          span.text_para My two friends and I don’t expect a Nobel Prize. We don’t expect to have a bridge or a building named after us. None of the great scientists think in those terms while pursuing their breakthroughs; they think only of the good their research might do for humanity.
+        .content_para
+          span.para_num 4
+          span.text_para My two friends and I don’t expect a Nobel Prize. We don’t expect to have a bridge or a building named after us. None of the great scientists think in those terms while pursuing their breakthroughs; they think only of the good their research might do for humanity.
+        .content_para
+          span.para_num 5
+          span.text_para My two friends and I don’t expect a Nobel Prize. We don’t expect to have a bridge or a building named after us. None of the great scientists think in those terms while pursuing their breakthroughs; they think only of the good their research might do for humanity.
+      .test_left
+        .have_tabs
+          ul.tab-links 
+            li.active 
+              a(href="#tab1") 1
+            li
+              a(href="#tab2") 2
+          .tab_content
+            #tab1.tab.active
+              .request
+                span.bold_s Read this selection and the questions that follow it.
+                  br   
+                  |Choose the best answer for each question.
+              .title_para
+                span.bold_m Sample Selection
+                span.bold_l A Birthday Challenge
+                span.light_i by Neil Genzlinger
+              .content_para
+                span.para_num 1
+                span.text_para My two friends and I don’t expect a Nobel Prize. We don’t expect to have a bridge or a building named after us. None of the great scientists think in those terms while pursuing their breakthroughs; they think only of the good their research might do for humanity.
+            #tab2.tab
+              .request
+                span.bold_s You will now read two related passages and answer the questions that follow. Some of these questions will ask you to compare the two passages.  
+                  br   
+                  |Choose the best answer for each question.
+              .title_para
+                span.bold_l Could You Pipe Down? My Ears Thank You
+                span.bold_m The New York Times
+                span.light_i by Neil Genzlinger
+              .content_para
+                span.para_num 1
+                span.text_para The day was Tuesday, and an outfit called Make Music New York had arranged outdoor musical performances all over town, some by professionals, others featuring recreational players who simply turned up at a designated time and place to jam.    
+      .test_right.answer
+        span.bold_s What is the author’s primary purpose in the passage?
+        br
+        .btn_show
+          span.hide_a Hide All
+          span.show Show All  
+        .text_ans
+          .ans_option.ans_A
+            span.mask_control
+            span.circle
+            p to criticize the city of New York for putting on a noisy event
+          .ans_option.ans_B
+            span.mask_control
+            span.circle
+            p to instruct readers on how to eliminate excessive noise from their environment
+          .ans_option.ans_C
+            span.mask_control
+            span.circle
+            p to persuade readers to purchase noise-canceling headphones
+          .ans_option.ans_D
+            span.mask_control
+            span.circle
+            p to illustrate the difficulties of blocking out the noise of New York in an entertaining way

@@ -1,0 +1,82 @@
+extends layouts/layout_basic_test
+
+block vars
+  -title = 'Basic Test Content'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  main
+    .test_content
+      .one_col
+        .para_left
+          p.function_tst (2x+3y)(x-5)
+        .para_left
+          img(src="images/chart.png", alt="imageQ").img_tst  
+        .para_left
+          p.txt_tst What is the simplified form of this expression?
+        .answer
+          .btn_show
+            span.hide_a Hide All
+            span.show Show All  
+          .function
+            .ans_option.ans_A
+              span.mask_control
+              span.circle
+              img(src="images/a1.png", alt="answer1")
+            .ans_option.ans_B
+              span.mask_control
+              span.circle
+              img(src="images/a2.png", alt="answer2")
+            .ans_option.ans_C
+              span.mask_control
+              span.circle
+              img(src="images/a3.png", alt="answer3")    
+            .ans_option.ans_D
+              span.mask_control
+              span.circle
+              img(src="images/a4.png", alt="answer4")                 
+          .text_ans
+            .ans_option.ans_A
+              span.mask_control
+              span.circle
+              p The 
+                i y
+                |-intercept does not change.
+            .ans_option.ans_B
+              span.mask_control
+              span.circle
+              p The 
+                i y
+                |-intercept changes from 0 to 4.
+            .ans_option.ans_C
+              span.mask_control
+              span.circle
+              p The 
+                i y
+                |-intercept changes from 0 to –4.
+            .ans_option.ans_D
+              span.mask_control
+              span.circle
+              p The 
+                i y
+                |-intercept becomes equal to the 
+                i x
+                |-intercept.          
+          .img_ans
+            .ans_option.ans_A.select
+              span.mask_control
+              span.circle
+              img(src="images/a.png", alt="answerA")
+            .ans_option.ans_B.select
+              span.mask_control
+              span.circle
+              img(src="images/b.png", alt="answerB")
+            .ans_option.ans_C.select
+              span.mask_control
+              span.circle
+              img(src="images/c.png", alt="answerC")
+             .ans_option.ans_D.select
+              span.mask_control
+              span.circle
+              img(src="images/d.png", alt="answerD")        

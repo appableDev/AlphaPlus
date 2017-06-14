@@ -1,0 +1,26 @@
+extends layouts/layout_login
+
+block vars
+  -title = 'Login Form'
+  -bodyClass = 'home1'
+  -menuIndex = 0
+
+block container
+  main
+    .login_form 
+      .sum_form 
+        .main_title
+          h3 Login Admin
+        .desc_login
+          //- p Enter the Email and Password to login the next page
+          form(method="post", action="/api/v1/authentication")
+            .email_login
+              span Email
+              input(type='text',name='email',placeholder="Enter Your Email")
+            .pass_login
+              span Password
+              input(type='password',name='password',placeholder="Password")
+            .btn_1 
+              button(type="submit",id="submit") Login    
+
+    

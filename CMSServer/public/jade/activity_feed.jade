@@ -1,0 +1,48 @@
+extends layouts/layout_activity
+
+block vars
+  -title = 'Activity Feed'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  main
+    .activity_feed
+      .choose_class
+        label
+          select
+            option(value="class") Classroom
+            option(value="math5") Math 5 - 365926
+            option(value="reading5")  Reading 5 - 365926
+            option(value="math2") Math 2 - 365927
+            option(value="reading2")  Reading 2 - 365927
+      .open_test
+        h3 Open Test Sessions
+        .item_subject
+          p Reading 5 (Paused)
+          a(href="#")
+            button.active(type="button", name="",id="play") 
+      .active_report
+        h3 Activity Report
+        .table_form
+          table
+            tr
+              th Class
+              th Date
+              th % Proficient
+            tr.even       
+              td Reading 5
+              td 11/05/2015 
+              td 30%
+            tr       
+              td Math 5
+              td 11/04/2015 
+              td 80%
+            tr.even       
+              td Reading 5
+              td 11/03/2015 
+              td 70%
+            tr       
+              td Math 5
+              td 10/30/2015 
+              td 60%

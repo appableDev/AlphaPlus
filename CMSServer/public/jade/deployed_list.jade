@@ -1,0 +1,60 @@
+extends layouts/layout_deploy
+
+block vars
+  -title = 'Deployed List'
+  -bodyClass = 'home'
+  -menuIndex = 0
+
+block container
+  main
+    .br_tab
+        ul
+          li
+            a(href="#") Jenks HS
+          li
+            a(href="#") Algebra 2 0879
+          li
+            a(href="#") Course Tests
+          li
+            a(href="#") Deployed Tests
+    .form_status
+      table
+        tr
+          th.object Objective
+          th.test_id Test ID
+          th.pin_code PIN
+          th.status Status
+        tr.even
+          td
+            .object1
+              button(type="button", id="add")
+              p 1.1a
+          td 
+            p 578132
+          td 
+            p 855
+          td 
+            label(for="inactive")
+        tr
+          td
+            .object1
+              button(type="button", id="add1")
+              p 1.1b
+          td 
+            p 638179
+          td 
+            p 123
+          td 
+            label(for="active")
+        tr.even
+          td
+            .object1
+              button(type="button", id="add2")
+              p 1.2
+          td 
+            p 275016
+          td 
+            p 826
+          td 
+            label(for="active")            
+
